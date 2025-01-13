@@ -104,6 +104,71 @@ public class Condicionales {
             System.out.println("no son iguales");
         }
 
+        System.out.println(" ");
+        System.out.println("----------------------------------------------------------");
+        System.out.println(" ");
+        System.out.println("Ejercicio 7");
+        System.out.println(" ");
+
+        //Ej 7
+        // Pide tres números y muestra cuál es el mayor.
+
+        int aa = 20;
+        int bb = 9;
+        int cc = 4;
+
+        if (aa > bb && aa > cc){
+            System.out.println(aa + " es el mayor");
+        } else if (bb > aa && bb > cc) {
+            System.out.println(bb + " es el mayor");
+        }else if (cc > aa && cc > bb){
+            System.out.println(cc + " es el mayor");
+        }
+
+        System.out.println(" ");
+        System.out.println("----------------------------------------------------------");
+        System.out.println(" ");
+        System.out.println("Ejercicio 8");
+        System.out.println(" ");
+
+        //Ej 8
+        // Calcula la tarifa a pagar en un estacionamiento según estas reglas:
+        //Menos de 2 horas: $5 por hora.
+        //Entre 2 y 5 horas: $4 por hora.
+        //Más de 5 horas: $3 por hora
+
+        int t = 1;
+
+        if (t < 2){
+            System.out.println("El usuario debe pagar $5");
+        } else if (t >= 2 && t <= 5) {
+            System.out.println("El usuario debe pagar $4");
+        } else if (t > 5) {
+            System.out.println("El usuario debe pagar $3");
+        }
+
+        System.out.println(" ");
+        System.out.println("----------------------------------------------------------");
+        System.out.println(" ");
+        System.out.println("Ejercicio 9");
+        System.out.println(" ");
+
+        //Ej 9
+        //Calcula el descuento en una tienda:
+        //Si compra más de $100, obtiene un 10% de descuento.
+        //Si compra más de $500, obtiene un 20% de descuento.
+
+        int compra = 600;
+        double descuentoA = compra -  (compra * 0.1);
+        double descuentoB = compra - (compra * 0.2);
+
+
+        if (compra > 100){
+            System.out.println(" el monto a pagar es de " + descuentoA);
+        } else if (compra > 500) {
+            System.out.println(" el monto a pagar es de " + descuentoB);
+        }
+
 
     }
 }
