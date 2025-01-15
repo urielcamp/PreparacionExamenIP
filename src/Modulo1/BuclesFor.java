@@ -197,6 +197,38 @@ public class BuclesFor {
                 }
             }
 
+        System.out.println(" ");
+        System.out.println("----------------------------------------------------------");
+        System.out.println(" ");
+        System.out.println("Ejercicio 12");
+        System.out.println(" ");
+
+        //Ej 12
+        //Escribe un programa que genere el siguiente patrón para un número ingresado:
+        //Ejemplo para N = 5:
+        //Copiar código
+        //    *
+        //   **
+        //  ***
+        // ****
+        //*****
+
+        for (int i = 1; i <= m; i++){
+            for (int j = 1; j <= m - i; j++){
+                System.out.print(" ");
+            }
+
+            for (int f = 1; f <= i; f++){
+                System.out.print("*");
+            }
+
+            System.out.println();
+        }
+
+
+
+
+
 
 
 
