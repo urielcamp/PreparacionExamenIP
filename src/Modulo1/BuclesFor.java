@@ -181,7 +181,21 @@ public class BuclesFor {
         System.out.println(" ");
 
         //Ej 11
-        //Escribe un programa que imprima los números del 1 al 100, pero omite los múltiplos de 5.
+        //Calcula y muestra todos los números entre 1 y 100 que sean primos.
+
+            for (int i = 2; i <= 100; i++){
+                boolean esPrimo = true;
+
+                for (int j = 2; j <= Math.sqrt(i); j++){
+                    if(i%j == 0){
+                        esPrimo = false;
+                        break;
+                    }
+                }
+                if (esPrimo){
+                    System.out.print(i + " ");
+                }
+            }
 
 
 
