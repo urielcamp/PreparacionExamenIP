@@ -1,3 +1,4 @@
+import Modulo2.Calculadora;
 import Modulo2.Persona;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -31,6 +32,19 @@ public class Main {
         System.out.println(" ");
 
         System.out.println(prs.esMayorDeEdad());
+
+        System.out.println(" ");
+        System.out.println("----------------------------------------------------------");
+        System.out.println(" ");
+        System.out.println("Ejercicio 4");
+        System.out.println(" ");
+
+        Calculadora cl = new Calculadora();
+
+        System.out.println(cl.sumar(10, 10));
+        System.out.println(cl.restar(10, 5));
+        System.out.println(cl.multiplicar(2, 2));
+        System.out.println(cl.dividir(2.0, 2.0));
 
 
 
