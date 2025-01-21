@@ -35,6 +35,22 @@ public class FuncionesYModularidad {
 
         tablaMultiplicar(2);
 
+        System.out.println(" ");
+        System.out.println("----------------------------------------------------------");
+        System.out.println(" ");
+        System.out.println("Ejercicio 5");
+        System.out.println(" ");
+
+        Factorial(5);
+
+        System.out.println(" ");
+        System.out.println("----------------------------------------------------------");
+        System.out.println(" ");
+        System.out.println("Ejercicio 6");
+        System.out.println(" ");
+
+        System.out.println(esPrimo(7));
+
 
 
 
@@ -88,9 +104,57 @@ public class FuncionesYModularidad {
     }
 
     //EJ5
-    //Tabla de multiplicar:
-    //Escribe una función llamada tablaMultiplicar que reciba un número y
-    // retorne su tabla de multiplicar del 1 al 10 en forma de cadena.
+    //Factorial:
+    //Escribe una función llamada factorial que reciba un número entero positivo y
+    // retorne su factorial. Usa un bucle para calcularlo.
+
+    public static void Factorial(int a){
+        int aux = 1;
+        for (int i = 1; i <= a; i++){
+             aux = aux * i;
+        }
+        System.out.println(aux);
+    }
+
+    //EJ6
+    //Crea una función llamada esPrimo que reciba un número entero y
+    // retorne true si es primo y false si no lo es.
+
+    public static boolean esPrimo(int a){
+        if (a <= 1){
+            return false;
+        }
+        for (int i = 2; i<= Math.sqrt(a); i++){
+            if (a%i == 0){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    //EJ7
+    //Crea una función llamada esPrimo que reciba un número entero y
+    // retorne true si es primo y false si no lo es.
+
+    public static boolean esPri(int a){
+        if (a <= 1){
+            return false;
+        }
+
+        for (int i = 2; i <= Math.sqrt(a); i++){
+            if (a%i == 0){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    //EJ8
+    //Serie de Fibonacci:
+    //Escribe una función llamada fibonacci que reciba un número n y
+    //retorne una lista con los primeros n números de la serie de Fibonacci.
+
+
 
 
 
