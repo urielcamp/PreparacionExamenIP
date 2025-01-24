@@ -1,4 +1,6 @@
 import Modulo2.Calculadora;
+import Modulo2.Gerente;
+import Modulo2.LibroExamen;
 import Modulo2.Persona;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -46,6 +48,27 @@ public class Main {
         System.out.println(cl.multiplicar(2, 2));
         System.out.println(cl.dividir(2.0, 2.0));
 
+        System.out.println(" ");
+        System.out.println("----------------------------------------------------------");
+        System.out.println(" ");
+        System.out.println("Ejercicio examen 1");
+        System.out.println(" ");
+
+
+        LibroExamen libro1 = new LibroExamen("1984", "George Orwell");
+        System.out.println("Título: " + libro1.getTitulo());
+        System.out.println("Autor: " + libro1.getAutor());
+        System.out.println("Número de páginas: " + libro1.getNroPaginas());
+
+        System.out.println(" ");
+        System.out.println("----------------------------------------------------------");
+        System.out.println(" ");
+        System.out.println("Ejercicio examen 2");
+        System.out.println(" ");
+
+        Gerente gerente1 = new Gerente("Juan Perez", 50000, 5);
+        System.out.println("Bono anual: " + gerente1.calcularBonoAnual());
+        System.out.println("Salario anual: " + gerente1.calcularSalarioAnual());
 
 
     }
