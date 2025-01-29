@@ -2,6 +2,8 @@ import Modulo2.Calculadora;
 import Modulo2.Gerente;
 import Modulo2.LibroExamen;
 import Modulo2.Persona;
+import Modulo2.PeliculaExamen;
+import Modulo2.VehiculoExamen;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -69,6 +71,37 @@ public class Main {
         Gerente gerente1 = new Gerente("Juan Perez", 50000, 5);
         System.out.println("Bono anual: " + gerente1.calcularBonoAnual());
         System.out.println("Salario anual: " + gerente1.calcularSalarioAnual());
+
+
+        System.out.println(" ");
+        System.out.println("----------------------------------------------------------");
+        System.out.println(" ");
+        System.out.println("Ejercicio 5");
+        System.out.println(" ");
+
+        prs.tiempoParaJubilarse();
+
+        System.out.println(" ");
+        System.out.println("----------------------------------------------------------");
+        System.out.println(" ");
+        System.out.println("Ejercicio 6");
+        System.out.println(" ");
+
+        PeliculaExamen pelicula1 = new PeliculaExamen("Inception", "Christopher Nolan");
+        System.out.println("Título: " + pelicula1.getTitulo());
+        System.out.println("Director: " + pelicula1.getDirector());
+        System.out.println("Duración: " + pelicula1.getDuracion());
+
+        System.out.println(" ");
+        System.out.println("----------------------------------------------------------");
+        System.out.println(" ");
+        System.out.println("Ejercicio 7");
+        System.out.println(" ");
+
+        VehiculoExamen auto = new VehiculoExamen("Toyota", "Corolla", 2020);
+        System.out.println("Marca: " + auto.getMarca());
+        System.out.println("Modelo: " + auto.getModelo());
+        System.out.println("Año: " + auto.getAnoFabricacion());
 
 
     }
