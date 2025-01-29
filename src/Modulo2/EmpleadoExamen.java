@@ -31,37 +31,40 @@ package Modulo2;
 
 
 
-public class EmpleadoExamen{
+public class EmpleadoExamen {
 
     private String nombre;
     private double salario;
     private int anosServicio;
 
-
-    public EmpleadoExamen(){
+    // Constructor de la clase EmpleadoExamen
+    public EmpleadoExamen(String nombre, double salario, int anosServicio) {
+        this.nombre = nombre;
+        this.salario = salario;
+        this.anosServicio = anosServicio;
     }
 
-    public String getNombre(){
+    public String getNombre() {
         return nombre;
     }
 
-    public double getSalario(){
+    // Método getSalario() ahora es público
+    public double getSalario() {
         return salario;
     }
 
-    public int getAnosServicio(){
+    // Método getAnosServicio() ahora es público
+    public int getAnosServicio() {
         return anosServicio;
     }
 
-    public double calcularBonoAnual(){
-        return salario;
+    // Métodos base que serán sobrescritos en la subclase
+    public double calcularBonoAnual() {
+        return 0; // Esto es solo un valor base, lo sobrescribe Gerente
     }
 
-    public double calcularSalarioAnual(){
-        return salario;
+    public double calcularSalarioAnual() {
+        return salario; // Esto es solo un valor base, lo sobrescribe Gerente
     }
-
-
 }
-
 

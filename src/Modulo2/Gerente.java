@@ -1,34 +1,21 @@
 package Modulo2;
 
-public class Gerente extends EmpleadoExamen{
+public class Gerente extends EmpleadoExamen {
 
+    // Constructor de la clase Gerente
+    public Gerente(String nombre, double salario, int anosServicio) {
+        super(nombre, salario, anosServicio); // Llamada al constructor de la clase base (EmpleadoExamen)
+    }
 
-        private String nombre;
-        private double salario;
-        private int anosServicio;
-        private double bonoAnual;
-        private double salarioAnual;
+    // Sobrescribiendo el método para calcular el bono anual
+    @Override
+    public double calcularBonoAnual() {
+        return 0.1 * getSalario() * getAnosServicio(); // Bono: 10% del salario por cada año de servicio
+    }
 
-        public Gerente(String nombre, double salario, int anosServicio){
-            this.nombre = nombre;
-            this.salario = salario;
-            this.anosServicio = anosServicio;
-            this.salarioAnual = salarioAnual;
-            this.bonoAnual = bonoAnual;
-        }
-
-
-        @Override
-        public double calcularBonoAnual(){
-           return bonoAnual = 0.1 * salario * anosServicio;
-        }
-
-        @Override
-        public double calcularSalarioAnual(){
-            return salarioAnual = salario + bonoAnual;
-        }
-
-
-
-
+    // Sobrescribiendo el método para calcular el salario anual
+    @Override
+    public double calcularSalarioAnual() {
+        return getSalario() + calcularBonoAnual(); // Salario anual = salario base + bono anual
+    }
 }

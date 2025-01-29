@@ -103,6 +103,14 @@ public class Main {
         System.out.println("Modelo: " + auto.getModelo());
         System.out.println("Año: " + auto.getAnoFabricacion());
 
+        System.out.println(" ");
+        System.out.println("----------------------------------------------------------");
+        System.out.println(" ");
+        System.out.println("Ejercicio 8");
+        System.out.println(" ");
+
+
+
 
     }
 }
