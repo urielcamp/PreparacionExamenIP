@@ -203,6 +203,33 @@ public class Listas {
         System.out.println(list);
 
 
+        System.out.println(" ");
+        System.out.println("----------------------------------------------------------");
+        System.out.println(" ");
+        System.out.println("Ejercicio 10");
+        System.out.println(" ");
+
+
+        //Implementa una LinkedList<Integer> donde cada número se duplique si es impar.
+
+        LinkedList<Integer> duplicados = new LinkedList<>();
+
+        for (int i = 1; i <= 10; i++){
+            duplicados.add(i);
+        }
+
+        System.out.println(duplicados);
+
+        for (int i = 0; i <= duplicados.size() - 1; i++){
+            if (duplicados.get(i)%2 != 0){
+                int num = duplicados.get(i) * 2;
+
+                duplicados.set(i, num);
+            }
+        }
+
+        System.out.println(duplicados);
+
     }
 
     //Escribe una función llamada fibonacci que reciba un número n y
