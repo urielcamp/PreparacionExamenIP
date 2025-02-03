@@ -65,6 +65,112 @@ public class Listas {
         System.out.println(nombres.contains("Sonia"));
 
 
+        System.out.println(" ");
+        System.out.println("----------------------------------------------------------");
+        System.out.println(" ");
+        System.out.println("Ejercicio 4");
+        System.out.println(" ");
+
+
+        //Crea una LinkedList de nombres y agrégale 5 nombres. Luego, imprime todos los nombres en orden inverso.
+
+        LinkedList<String> n = new LinkedList<>();
+
+        n.add("Javier");
+        n.add("Lucas");
+        n.add("Fiorella");
+        n.add("Rebecca");
+        n.add("Uriel");
+
+        for(int i = n.size() -1; i >= 0; i-- ){
+            System.out.print(n.get(i) + " ");
+        }
+
+        System.out.println(" ");
+        System.out.println("----------------------------------------------------------");
+        System.out.println(" ");
+        System.out.println("Ejercicio 5");
+        System.out.println(" ");
+
+        //Crea una LinkedList y usa el método poll() para eliminar y mostrar el primer elemento.
+
+        LinkedList<Integer> m = new LinkedList<>();
+
+        for (int i = 1; i <= 5; i++){
+            m.add(i);
+        }
+
+        System.out.println(m);
+
+        System.out.println(m.poll());
+
+        System.out.println(m);
+
+        System.out.println(" ");
+        System.out.println("----------------------------------------------------------");
+        System.out.println(" ");
+        System.out.println("Ejercicio 6");
+        System.out.println(" ");
+
+
+        //Convierte una LinkedList en un ArrayList.
+
+
+        LinkedList<Integer> c = new LinkedList<>();
+
+
+        for (int i = 1; i <= 5; i++){
+            c.add(i);
+        }
+
+        System.out.println(c);
+
+        Integer[] Array = c.toArray(new Integer[0]);
+
+        for (int i = 0; i < Array.length ; i++){
+            System.out.print(Array[i] + " ");
+        }
+
+        System.out.println(" ");
+        System.out.println("----------------------------------------------------------");
+        System.out.println(" ");
+        System.out.println("Ejercicio 7");
+        System.out.println(" ");
+
+
+        //Crea una LinkedList<Double> y encuentra el número mayor y el menor sin usar Collections.
+
+        LinkedList<Double> o = new LinkedList<>();
+
+        o.add(9.0);
+        o.add(2.0);
+        o.add(54.0);
+        o.add(2.0);
+        o.add(0.5);
+
+
+        double menor = o.get(0);
+        double mayor = o.get(0);
+
+        for (Double num: o){
+            if (num < menor){
+                menor = num;
+            }
+
+            if (num > mayor){
+                mayor = num;
+            }
+        }
+
+        System.out.println("El valor menor es: " + Double.valueOf(menor));
+        System.out.println("El valor mayor es: " + Double.valueOf(mayor));
+
+
+
+
+
+
+
 
 
 
