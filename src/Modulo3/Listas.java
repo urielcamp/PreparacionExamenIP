@@ -1,5 +1,6 @@
 package Modulo3;
 
+import java.util.Collections;
 import java.util.LinkedList;
 
 public class Listas {
@@ -15,7 +16,7 @@ public class Listas {
 
         LinkedList<Integer> pLista = new LinkedList<>();
 
-        for(int i = 1; i <= 10; i++) {
+        for (int i = 1; i <= 10; i++) {
             if (i % 2 == 0) {
                 pLista.remove(Integer.valueOf(i));
             } else {
@@ -82,7 +83,7 @@ public class Listas {
         n.add("Rebecca");
         n.add("Uriel");
 
-        for(int i = n.size() -1; i >= 0; i-- ){
+        for (int i = n.size() - 1; i >= 0; i--) {
             System.out.print(n.get(i) + " ");
         }
 
@@ -96,7 +97,7 @@ public class Listas {
 
         LinkedList<Integer> m = new LinkedList<>();
 
-        for (int i = 1; i <= 5; i++){
+        for (int i = 1; i <= 5; i++) {
             m.add(i);
         }
 
@@ -119,7 +120,7 @@ public class Listas {
         LinkedList<Integer> c = new LinkedList<>();
 
 
-        for (int i = 1; i <= 5; i++){
+        for (int i = 1; i <= 5; i++) {
             c.add(i);
         }
 
@@ -127,7 +128,7 @@ public class Listas {
 
         Integer[] Array = c.toArray(new Integer[0]);
 
-        for (int i = 0; i < Array.length ; i++){
+        for (int i = 0; i < Array.length; i++) {
             System.out.print(Array[i] + " ");
         }
 
@@ -152,12 +153,12 @@ public class Listas {
         double menor = o.get(0);
         double mayor = o.get(0);
 
-        for (Double num: o){
-            if (num < menor){
+        for (Double num : o) {
+            if (num < menor) {
                 menor = num;
             }
 
-            if (num > mayor){
+            if (num > mayor) {
                 mayor = num;
             }
         }
@@ -165,50 +166,119 @@ public class Listas {
         System.out.println("El valor menor es: " + Double.valueOf(menor));
         System.out.println("El valor mayor es: " + Double.valueOf(mayor));
 
+        System.out.println(" ");
+        System.out.println("----------------------------------------------------------");
+        System.out.println(" ");
+        System.out.println("Ejercicio 8");
+        System.out.println(" ");
+
+        //Implementa una LinkedList que elimine todos los números negativos.
+
+        LinkedList<Integer> numbers = new LinkedList<>();
+
+        numbers.add(-2);
+        numbers.add(4);
+        numbers.add(2);
+        numbers.add(-1);
+        numbers.add(3);
+        numbers.add(-1);
+
+        for (int l = 0; l <= numbers.size() - 1; l++) {
+            if (numbers.get(l) < 0) {
+                numbers.remove(numbers.get(l));
+            }
+        }
+
+        System.out.println(numbers);
 
 
+        System.out.println(" ");
+        System.out.println("----------------------------------------------------------");
+        System.out.println(" ");
+        System.out.println("Ejercicio 9");
+        System.out.println(" ");
 
+        LinkedList<Integer> list = fibonacci(10);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        System.out.println(list);
 
 
     }
+
+    //Escribe una función llamada fibonacci que reciba un número n y
+    //retorne una lista con los primeros n números de la serie de Fibonacci.
+
+    public static LinkedList<Integer> fibonacci(int n){
+        LinkedList<Integer> fibLista = new LinkedList<>();
+
+        if (n <= 0) return fibLista;
+        fibLista.add(0);
+
+        if (n == 1) return fibLista;
+        fibLista.add(1);
+
+        if (n == 2) return fibLista;
+
+        for (int i = 2; i < n; i++){
+            int numNuevo = fibLista.get(i - 1) + fibLista.get(i -2 );
+            fibLista.add(numNuevo);
+        }
+
+        return fibLista;
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
