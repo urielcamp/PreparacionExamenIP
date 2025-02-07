@@ -230,6 +230,37 @@ public class Listas {
 
         System.out.println(duplicados);
 
+
+
+        System.out.println(" ");
+        System.out.println("----------------------------------------------------------");
+        System.out.println(" ");
+        System.out.println("Ejercicio 11");
+        System.out.println(" ");
+
+        ////Escribe una función llamada factoriales que, dado un entero n,
+        //// calcule los factoriales de todos los números desde 0 hasta n y
+        // devuelva una lista con los resultados.
+        ////
+        ////El factorial de un número k (denotado como k!) es el producto de todos los
+        // enteros positivos menores o iguales a k.
+        //// Por ejemplo,
+        // el factorial de 5 es 5! = 5 * 4 * 3 * 2 * 1 = 120.
+        ////
+        ////factorial(5) , me devuelve:
+        ////
+        ////[1, 1, 2, 6, 24, 120]
+        ////
+
+
+        System.out.println(Factorial(5));
+
+
+
+
+
+
+
     }
 
     //Escribe una función llamada fibonacci que reciba un número n y
@@ -253,6 +284,29 @@ public class Listas {
 
         return fibLista;
 
+
+    }
+
+
+    //-----------------------------******************************---------------------------------
+
+
+    //factorial
+
+    public static LinkedList<Integer>Factorial(int n){
+
+        LinkedList<Integer> factList = new LinkedList<>();
+
+        int fac = 1;
+
+        for (int i = 0; i <= n; i++){
+            if(n > 0){
+                fac *= i;
+            }
+            factList.add(fac);
+        }
+
+        return factList;
 
     }
 
