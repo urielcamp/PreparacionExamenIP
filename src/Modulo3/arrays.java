@@ -106,8 +106,65 @@ public class arrays {
 
         System.out.println(Arrays.toString(fibonacci));
 
+        System.out.println(" ");
+        System.out.println("----------------------------------------------------------");
+        System.out.println(" ");
+        System.out.println("Ejercicio 7");
+        System.out.println(" ");
+
+
+        //Escribe un método que reemplace todos los valores negativos en un array con 0.
+
+        int[] k = {1, -3, 43, 2, -4, -98, 3};
+
+        System.out.println(Arrays.toString(remplazarNegativos(k)));
+
+        System.out.println(" ");
+        System.out.println("----------------------------------------------------------");
+        System.out.println(" ");
+        System.out.println("Ejercicio 8");
+        System.out.println(" ");
+
+
+        //crear un metodo que devuelva un array con el factorial de la longitud de dicho array.
+
+        int[] p = new int[5];
+
+        System.out.println(Arrays.toString(factorialArray(p)));
+
+
+
+
+
+
+
 
     }
+
+
+        public static int[] factorialArray(int[] n){
+            n[0] = 1;
+            n[1] = 2;
+
+            int num = 1;
+            for (int i = 1; i < n.length; i++){
+                num *= i + 1;
+                n[i] = num;
+             }
+
+
+            return n;
+        }
+
+        public static int[] remplazarNegativos(int[] n){
+            for (int i = 1; i < n.length; i++){
+                if (n[i] < 0){
+                    n[i] = 0;
+                }
+            }
+
+            return n;
+        }
 
 
         public static boolean buscarNumero(int[] n, int num){
