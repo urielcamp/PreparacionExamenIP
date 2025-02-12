@@ -259,6 +259,20 @@ public class Listas {
 
 
 
+        System.out.println("------------------------------------------------------");
+
+        LinkedList<Integer> prueba = new LinkedList<>();
+        prueba.add(1);
+        prueba.add(2);
+        prueba.add(3);
+        prueba.add(4);
+
+        System.out.println(cuadrado(prueba));
+
+
+
+
+
 
 
     }
@@ -285,6 +299,9 @@ public class Listas {
         return fibLista;
 
 
+
+
+
     }
 
 
@@ -309,6 +326,24 @@ public class Listas {
         return factList;
 
     }
+
+
+
+        public static LinkedList<Integer> cuadrado(LinkedList<Integer> numeros) {
+            // su codigo aqui
+            LinkedList<Integer> pruebaList = new LinkedList<>();
+            int res = 0;
+
+            for(int i = 0; i < numeros.size(); i++){
+                res = numeros.get(i) * numeros.get(i);
+                pruebaList.add(res);
+            }
+
+
+
+
+            return pruebaList;
+        }
 
 
 
